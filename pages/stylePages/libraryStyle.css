@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #233f6d;
+}
+
+.container {
+  width: 100%;
+  color: #233f6d;
+  margin: 10px;
+}
+
+/* Main Side */
+.main {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  background: var(--clr);
+  border-radius: 20px;
+}
+
+.box {
+  position: absolute;
+  inset: 10px;
+}
+
+.navbar {
+  position: absolute;
+  width: 350px;
+  height: 80px;
+  background: var(--clr);
+  border-bottom-right-radius: 40px;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-top-left-radius: 30px;
+  box-shadow: -5px -5px 0px 5px var(--clr);
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -78px;
+  width: 80px;
+  height: 70px;
+  background-color: transparent;
+  border-top-left-radius: 50px;
+  box-shadow: -5px -25px 0px 5px var(--clr);
+}
+
+.navbarBox {
+  position: absolute;
+  inset: 0px 15px 15px 0px;
+  background: #3084bf;
+  border-radius: 100px;
+}
+
+.navbarBox ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.navbarBox ul a {
+  text-decoration: none;
+}
+.navbarBox ul li {
+  color: #e6e6e6;
+  margin-top: 22px;
+  font-weight: 600;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbarBox ul li:hover {
+  color: #d0e3f1;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.navbarBox img {
+  width: 45px;
+  margin-top: 10px;
+}
+
+/* Content */
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-top: 90px;
+}
+
+.card {
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content {
+  padding: 10px;
+  flex: 1;
+}
+
+.card-image {
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #233f6d;
+}
+
+.card-price {
+  font-size: 16px;
+  color: #233f6d;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  font-size: 12px;
+  color: #233f6d;
+  padding: 0 10px;
+}
+
+.buy-button {
+  background-color: #3084bf;
+  color: white;
+  width: 120px;
+  height: 35px;
+  border: none;
+  margin: 10px auto;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #003d80;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  margin-top: 1050px;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / -1;
+  background-color: #3084bf;
+  height: 55px;
+  width: 99.3%;
+  padding: 15px;
+  border-radius: 40px;
+  color: #e6e6e6;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer-text {
+  font-size: 18px;
+  color: #e6e6e6;
+  font-weight: bold;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-center h1 {
+  font-size: 14px;
+  margin: 0;
+  color: #e6e6e6;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none;
+}
