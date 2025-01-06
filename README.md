@@ -5,7 +5,7 @@ This project is a website designed using the concept of Bento Layout, a popular 
 
 In this project, I utilized HTML to build the basic framework of the website, where each content is placed in a neat grid structure. CSS is used to embellish the appearance with unique colors, typography, and styles that fit the modern design concept. JavaScript is also added to provide interactivity, such as alerts when the user interacts with the page size. 
 
-This project demonstrates my understanding in the use of grid-based layouts and my ability to implement modern UI/UX design principles to improve user experience.
+This project demonstrates my understanding in the use of grid-based layouts and my ability to implement modern UI/UX design principles to improve user experience
 
 
 
